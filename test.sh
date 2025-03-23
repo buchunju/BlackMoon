@@ -1,5 +1,5 @@
 #!/bin/env bash
-rm Atlas.iso
+rm -f Atlas.iso
 dd if=/dev/zero of=Atlas.iso count=70000
 mkfs.vfat -F 32 Atlas.iso
 dd if=boot of=Atlas.iso conv=notrunc
